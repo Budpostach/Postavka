@@ -491,6 +491,13 @@ td.mono,th.mono{font-family:var(--font-mono);font-variant-numeric:tabular-nums;w
 }
 .footer-sub a{text-decoration:none}
 .footer-sub a:hover,.footer-sub a[aria-current="page"]{color:var(--lime)}
+.footer-copy{
+  margin-top:14px;
+  font-size:.825rem;
+  line-height:1.45;
+  color:#8aa6ac;
+}
+.footer-copy p{margin:0}
 
 .header-cta{
   padding:9px 15px;
