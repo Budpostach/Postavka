@@ -37,7 +37,61 @@
 </div>
 </div></header>
 <main>
-<section class="hero"><div class="wrap hero-content">
+<section class="hero">
+<div class="hero-sea" aria-hidden="true">
+<svg class="hero-waves" viewBox="0 0 1536 1024" preserveAspectRatio="xMidYMid slice">
+<defs>
+<filter id="wake-soft" x="-15%" y="-15%" width="130%" height="130%">
+<feGaussianBlur stdDeviation="2.6"/>
+</filter>
+<filter id="wake-mist" x="-20%" y="-20%" width="140%" height="140%">
+<feGaussianBlur stdDeviation="6"/>
+</filter>
+<clipPath id="sea-surface">
+<path clip-rule="evenodd" d="M0 198 L820 204 L1160 228 L1536 278 L1536 1024 L0 1024 Z M1302 842 L1382 650 L1295 430 L955 255 L825 200 L720 345 L726 402 L822 570 L1035 736 L1288 842 Z"/>
+</clipPath>
+</defs>
+<g clip-path="url(#sea-surface)">
+<g class="sea-swells">
+<path class="sea-ripple sea-ripple-a" d="M320 620 Q520 655 710 745 T1040 935"/>
+<path class="sea-ripple sea-ripple-b" d="M220 760 Q450 790 680 885 T990 1015"/>
+<path class="sea-ripple sea-ripple-a" d="M440 480 Q610 515 790 610 T1110 825"/>
+<path class="sea-ripple sea-ripple-b" d="M120 430 Q340 445 550 515 T860 680"/>
+<path class="sea-ripple sea-ripple-a" d="M510 310 Q640 345 770 420"/>
+<path class="sea-ripple sea-ripple-b" d="M1355 835 Q1425 815 1515 775"/>
+<path class="sea-ripple sea-ripple-a" d="M1340 915 Q1435 885 1530 840"/>
+</g>
+<g filter="url(#wake-mist)">
+<path class="wake-glow wake-port w1" d="M1292 850 C1155 822 990 740 845 612 C740 518 668 415 605 320"/>
+<path class="wake-glow wake-port w3" d="M1292 850 C1155 822 990 740 845 612 C740 518 668 415 605 320"/>
+<path class="wake-glow wake-port w5" d="M1292 850 C1155 822 990 740 845 612 C740 518 668 415 605 320"/>
+<path class="wake-glow wake-starboard s1" d="M1310 846 C1352 824 1384 786 1412 728"/>
+<path class="wake-glow wake-starboard s3" d="M1310 846 C1352 824 1384 786 1412 728"/>
+</g>
+<g filter="url(#wake-soft)">
+<path class="wake-crest wake-port w1" d="M1294 850 C1165 820 1005 738 860 612 C755 520 682 418 618 325"/>
+<path class="wake-crest wake-port w2" d="M1294 850 C1165 820 1005 738 860 612 C755 520 682 418 618 325"/>
+<path class="wake-crest wake-port w3" d="M1294 850 C1165 820 1005 738 860 612 C755 520 682 418 618 325"/>
+<path class="wake-crest wake-port w4" d="M1294 850 C1165 820 1005 738 860 612 C755 520 682 418 618 325"/>
+<path class="wake-crest wake-port w5" d="M1294 850 C1165 820 1005 738 860 612 C755 520 682 418 618 325"/>
+<path class="wake-crest wake-port w6" d="M1294 850 C1165 820 1005 738 860 612 C755 520 682 418 618 325"/>
+<path class="wake-crest wake-bow-wide w2" d="M1298 854 C1190 848 1060 792 925 688"/>
+<path class="wake-crest wake-bow-wide w4" d="M1298 854 C1190 848 1060 792 925 688"/>
+<path class="wake-crest wake-bow-wide w6" d="M1298 854 C1190 848 1060 792 925 688"/>
+<path class="wake-crest wake-starboard s1" d="M1308 846 C1352 824 1384 786 1412 728"/>
+<path class="wake-crest wake-starboard s2" d="M1308 846 C1352 824 1384 786 1412 728"/>
+<path class="wake-crest wake-starboard s3" d="M1308 846 C1352 824 1384 786 1412 728"/>
+<path class="wake-crest wake-starboard s4" d="M1308 846 C1352 824 1384 786 1412 728"/>
+<path class="bow-crest bow-a" d="M1262 844 Q1302 882 1344 832"/>
+<path class="bow-crest bow-b" d="M1248 836 Q1302 894 1356 824"/>
+</g>
+<path class="hull-stream" d="M1292 848 C1165 802 1030 740 908 666 C815 575 752 480 718 402 C655 342 585 285 505 225"/>
+<path class="hull-stream hull-stream-alt" d="M1275 846 C1140 806 1005 745 885 662 C785 568 725 470 688 392 C628 334 560 280 485 222"/>
+<path class="hull-stream hull-stream-stbd" d="M1306 846 C1344 824 1372 786 1396 736"/>
+</g>
+</svg>
+</div>
+<div class="wrap hero-content">
 <p class="label"><span></span> КИТАЙ / УКРАЇНА</p>
 <h1>Доставка товарів<br>з Китаю <em>в Україну</em></h1>
 <p class="intro">Від забору у постачальника до отримання в Україні. Підберемо маршрут для зразка, збірної партії або цілого контейнера.</p>
