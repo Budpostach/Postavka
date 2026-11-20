@@ -413,18 +413,15 @@ footer{padding-block:22px;border-top:1px solid rgba(255,255,255,.08)}
 .messenger{
   display:grid;
   place-items:center;
-  width:34px;
-  height:34px;
-  border-radius:50%;
+  width:32px;
+  height:32px;
+  background:transparent;
   color:#fff;
-  transition:transform .16s var(--ease),opacity .16s var(--ease);
+  transition:transform .16s var(--ease),color .16s var(--ease),opacity .16s var(--ease);
 }
-.messenger svg{width:20px;height:20px}
-.telegram{background:#007fae}
-.whatsapp{background:#087b42}
-.viber{background:#6850a4}
-.messenger:hover{transform:translateY(-1px)}
-.messenger:hover,.messenger:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+.messenger svg{width:22px;height:22px}
+.messenger:hover{transform:translateY(-1px);color:var(--lime)}
+.messenger:focus-visible{outline:2px solid var(--lime);outline-offset:2px;border-radius:6px}
 
 .phones{display:flex;flex-direction:column;gap:2px}
 .header .phone,footer .phone{font-size:.94rem;line-height:1.25}
