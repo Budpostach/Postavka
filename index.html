@@ -64,8 +64,9 @@
 <fieldset><legend>Габарити однієї коробки, см</legend><div class="dimensions"><label>Довжина<input name="length" type="number" min="0.1" step="0.1"></label><label>Ширина<input name="width" type="number" min="0.1" step="0.1"></label><label>Висота<input name="height" type="number" min="0.1" step="0.1"></label></div></fieldset>
 <output id="volume" aria-live="polite"></output>
 <label>Що потрібно доставити?<textarea name="product" required rows="3" maxlength="2000" placeholder="Назва товару, місто відправлення або посилання"></textarea></label>
-<button class="button" type="submit">Підготувати запит</button>
-<div id="request" hidden><label>Текст для менеджера<textarea id="summary" readonly rows="7"></textarea></label><button class="button outline dark" type="button" id="copy">Скопіювати запит</button> <a href="tel:+380687768530">Зателефонувати</a><p id="status" role="status">Запит підготовлено. Скопіюйте його для листування з менеджером або зателефонуйте.</p></div>
+<div class="fields"><label><span>Ваше ім’я <span class="optional">(необов’язково)</span></span><input name="name" maxlength="100" autocomplete="name" placeholder="Ім’я або компанія"></label><label>Телефон<input type="tel" name="phone" required maxlength="20" inputmode="tel" autocomplete="tel" placeholder="+38 066 000 00 00"></label></div>
+<button class="button" type="submit">Надіслати запит</button>
+<div id="request" hidden><label>Текст запиту<textarea id="summary" readonly rows="7"></textarea></label><button class="button outline dark" type="button" id="copy">Скопіювати запит</button> <a href="tel:+380660647854">Зателефонувати</a><p id="status" role="status">Запит надіслано менеджеру.</p></div>
 </form></section>
 <section id="faq" class="band"><div class="wrap section faq"><h2>Поширені запитання</h2>
 <details><summary>Від чого залежить вартість доставки?</summary><p>Від маршруту, способу перевезення, типу товару, ваги, габаритів і додаткових послуг. Точну вартість узгоджуємо після перевірки параметрів вантажу.</p></details>

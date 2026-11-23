@@ -294,6 +294,8 @@ output{
 }
 #request{margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}
 #status{margin:12px 0 0;font-size:.92rem}
+#status.is-success{color:#1b6d49;font-weight:500}
+#status.is-error{color:#b33a3a;font-weight:500}
 
 details{
   border-bottom:1px solid #c6d7da;
