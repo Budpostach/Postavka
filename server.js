@@ -40,6 +40,11 @@ app.use(
   express.static(__dirname, {
     extensions: ['html'],
     dotfiles: 'deny',
+    setHeaders(res, filePath) {
+      if (/\.(html|js|css)$/i.test(filePath)) {
+        res.setHeader('Cache-Control', 'no-store, must-revalidate');
+      }
+    },
   })
 );
 
